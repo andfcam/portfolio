@@ -1,0 +1,49 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-stack;
+    color: $font-color;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+textarea,
+select,
+button {
+    border: none;
+    outline: none;
+}
+
+a {
+    font-size: 18px;
+    font-family: "Barlow Bold";
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-family: "Barlow Black";
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: "Barlow Bold";
+    font-size: 28px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,15 @@
+@import "../../../variables";
+
+.SelectMenu {
+    position: relative;
+
+    select {
+        width: 250px;
+        height: 40px;
+        border: 1px solid #444444;
+
+        option {
+            margin: 20px;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import "../../variables";
+
+$navbar-height: 75px;
+
+.Nav {
+    height: $navbar-height;
+    width: 100%;
+    padding: 10px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    overflow: hidden;
+    z-index: 10;
+    transition: 0.4s;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+
+    &.floating {
+        background-color: white;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    li {
+        display: inline;
+    }
+
+    a {
+        transition: 0.2s;
+        margin: 0 35px;
+
+        @media only screen and (max-width: 1080px) {
+            margin: 0 0 0 35px;
+        }
+
+        &.brand {
+            font-family: "Barlow";
+            font-size: 28px;
+
+            @media only screen and (max-width: 1080px) {
+                font-size: 22px;
+                margin: 0;
+            }
+        }
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.overlay {
+    height: $navbar-height;
+    width: 100%;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}

@@ -1,0 +1,71 @@
+@import "../../../variables";
+
+.Experience {
+    width: 100%;
+    background-image: url("../../../static/images/brown1.svg");
+    background-size: 100%;
+    padding: 110px 110px 165px 110px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    @media only screen and (max-width: 1080px) {
+        padding: 110px 75px 165px 75px;
+    }
+
+    @media only screen and (max-width: 540px) {
+        padding: 110px 50px 165px 50px;
+    }
+
+    .content {
+        width: 548px;
+
+        @media only screen and (max-width: 1080px) {
+            width: 400px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 540px) {
+            text-align: center;
+        }
+    }
+
+    img {
+        position: absolute;
+
+        &.theodolite {
+            width: 125px;
+            left: 15%;
+            top: 46%;
+
+            @media only screen and (max-width: 1080px) {
+                left: 13%;
+                top: 48%;
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 100px;
+                left: 52%;
+                top: 76%;
+            }
+
+            @media only screen and (max-width: 540px) {
+                left: 50%;
+                top: 78%;
+            }
+        }
+
+        &.worm {
+            width: 50px;
+            left: 30%;
+            top: 90%;
+
+            @media only screen and (max-width: 540px) {
+                left: 15%;
+            }
+        }
+    }
+}

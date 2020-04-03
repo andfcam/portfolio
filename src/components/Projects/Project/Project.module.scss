@@ -1,0 +1,22 @@
+@import "../../../variables";
+
+.Project {
+    flex-grow: 1;
+    margin: 10px;
+    min-width: 180px;
+    min-height: 100px;
+    background-color: rgba($color: white, $alpha: 0.4);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    h4 {
+        font-family: "Barlow Bold";
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}

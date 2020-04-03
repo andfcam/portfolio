@@ -1,0 +1,36 @@
+@import "../../../variables";
+
+.Button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    padding: 0 15px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: $primary-color;
+    transition: 0.4s;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 16px;
+
+    @media screen and (max-width: 400px) {
+        font-size: 14px;
+        min-width: 150px;
+        height: 30px;
+    }
+
+    &.secondary {
+        background: none;
+        border: 1px solid $primary-color;
+
+        &:hover {
+            border: 1px solid #bd005e;
+        }
+    }
+
+    &:hover {
+        background-color: #bd005e;
+    }
+}

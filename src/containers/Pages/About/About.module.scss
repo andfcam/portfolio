@@ -1,0 +1,159 @@
+@import "../../../variables";
+
+.About {
+    width: 100%;
+    background-color: #68b684;
+    background-image: url("../../../static/images/blue2.svg");
+    background-size: 100%;
+    padding: 330px 110px 110px 110px;
+    display: flex;
+
+    @media only screen and (max-width: 1080px) {
+        padding: 330px 75px 110px 75px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 150px 75px;
+        flex-direction: column-reverse;
+    }
+
+    @media only screen and (max-width: 540px) {
+        padding: 150px 50px;
+    }
+
+    .information {
+        margin: 0 0 0 15px;
+        width: 548px;
+        flex-shrink: 0;
+
+        @media only screen and (max-width: 1080px) {
+            width: 400px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            margin: 0 0 25px 0;
+            width: 100%;
+        }
+    }
+
+    .skills {
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+
+        @media only screen and (max-width: 1080px) {
+            flex-direction: column;
+            align-items: unset;
+            justify-content: center;
+        }
+
+        div {
+            &.bars {
+                margin: 0 30px 3px 15px;
+                flex-grow: 1;
+
+                @media only screen and (max-width: 1080px) {
+                    display: none;
+                }
+            }
+
+            p {
+                font-size: 18px;
+                text-align: right;
+
+                @media only screen and (max-width: 1080px) {
+                    display: inline-block;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    list-style-type: none;
+                    border-radius: 14px;
+                    margin-right: 5px;
+                    padding: 3px 14px;
+                    // font-size: 14px;
+
+                    &.HTML {
+                        background-color: tomato;
+                    }
+
+                    &.CSS {
+                        background-color: cornflowerblue;
+                    }
+
+                    &.Sass {
+                        background-color: pink;
+                    }
+
+                    &.JavaScript {
+                        background-color: gold;
+                    }
+
+                    &.Firebase {
+                        background-color: orange;
+                    }
+
+                    &.React {
+                        background-color: skyblue;
+                    }
+
+                    &.Node {
+                        background-color: greenyellow;
+                    }
+
+                    &.Agile {
+                        background-color: plum;
+                    }
+
+                    &.OOP {
+                        background-color: #cccccc;
+                    }
+
+                    &.APIs {
+                        background-color: turquoise;
+                    }
+
+                    &.Git {
+                        background-color: #ac8b5a;
+                    }
+
+                    &.VSCode {
+                        background-color: #666666;
+                        color: $secondary-color;
+                    }
+
+                    &.AutoCAD {
+                        background-color: palegreen;
+                    }
+
+                    &.Bash {
+                        background-color: $font-color;
+                        color: $secondary-color;
+                    }
+
+                    &.MongoDB {
+                        background-color: slateblue;
+                    }
+
+                    &.Testing {
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                background-color: #f3f4f5;
+                margin-top: 15px;
+                border-radius: 4px;
+                width: 100%;
+
+                span {
+                    background-color: gold;
+                    border-radius: 4px;
+                    height: 8px;
+                }
+            }
+        }
+    }
+}
