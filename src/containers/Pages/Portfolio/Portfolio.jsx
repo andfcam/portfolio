@@ -152,18 +152,20 @@ export default class Portfolio extends Component {
             <>
                 <a name="portfolio" />
                 <section className={styles.Portfolio}>
-                    <div className={styles.preview}>{this.preview}</div>
-                    <div className={styles.list}>
-                        <h2>Projects</h2>
-                        <SearchBar
-                            searchText={this.state.searchText}
-                            onChange={this.setSearchText}
-                            placeHolder={"Search by name..."}
-                        />
-                        <Projects
-                            projects={this.state.filteredProjects}
-                            onHover={this.handleHover}
-                        />
+                    <div className={styles.container}>
+                        <div className={styles.preview}>{this.preview}</div>
+                        <div className={styles.list}>
+                            <h2>Projects</h2>
+                            <SearchBar
+                                searchText={this.state.searchText}
+                                onChange={this.setSearchText}
+                                placeHolder={"Search by name..."}
+                            />
+                            <Projects
+                                projects={this.state.filteredProjects}
+                                onHover={this.handleHover}
+                            />
+                        </div>
                     </div>
                 </section>
             </>

@@ -4,71 +4,76 @@
     width: 100%;
     background-image: url("../../../static/images/blue1.svg");
     background-size: 100%;
-    padding: 109px 110px;
-    display: flex;
-    position: relative;
 
-    @media only screen and (max-width: 1080px) {
-        padding: 109px 75px;
-    }
+    .container {
+        position: relative;
+        max-width: 1440px;
+        padding: 109px 110px;
+        display: flex;
+        margin: 0 auto;
 
-    @media only screen and (max-width: 768px) {
-        padding: 150px 75px;
-    }
-
-    @media only screen and (max-width: 540px) {
-        padding: 150px 50px;
-        overflow: hidden;
-    }
-
-    .content {
-        width: 548px;
+        @media only screen and (max-width: 1080px) {
+            padding: 109px 75px;
+        }
 
         @media only screen and (max-width: 768px) {
-            width: 100%;
+            padding: 150px 75px;
         }
 
         @media only screen and (max-width: 540px) {
-            text-align: center;
+            padding: 150px 50px;
+            overflow: hidden;
         }
 
-        h2 {
-            font-size: 75px;
+        .content {
+            width: 548px;
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
 
             @media only screen and (max-width: 540px) {
-                font-size: 60px;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 75px;
+
+                @media only screen and (max-width: 540px) {
+                    font-size: 60px;
+                }
             }
         }
-    }
 
-    img {
-        position: absolute;
+        img {
+            position: absolute;
 
-        &.fish {
-            width: 125px;
-            left: 50%;
-            top: 80%;
-            transform: rotate(-15deg);
-
-            @media only screen and (max-width: 1080px) {
-                top: 70%;
-                left: 75%;
-            }
-
-            @media only screen and (max-width: 600px) {
-                width: 100px;
+            &.fish {
+                width: 125px;
+                left: 50%;
                 top: 80%;
-                left: 75%;
+                transform: rotate(-15deg);
+
+                @media only screen and (max-width: 1080px) {
+                    top: 70%;
+                    left: 75%;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    width: 100px;
+                    top: 80%;
+                    left: 75%;
+                }
             }
-        }
 
-        &.submarine {
-            width: 300px;
-            top: 35%;
-            left: 65%;
+            &.submarine {
+                width: 300px;
+                top: 35%;
+                left: 65%;
 
-            @media only screen and (max-width: 1080px) {
-                display: none;
+                @media only screen and (max-width: 1080px) {
+                    display: none;
+                }
             }
         }
     }

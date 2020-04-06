@@ -4,32 +4,37 @@
     width: 100%;
     background-image: url("../../../static/images/brown1.svg");
     background-size: 100%;
-    padding: 110px 110px 165px 110px;
-    display: flex;
-    justify-content: flex-end;
     position: relative;
 
-    @media only screen and (max-width: 1080px) {
-        padding: 110px 75px 165px 75px;
-    }
-
-    @media only screen and (max-width: 540px) {
-        padding: 110px 50px 165px 50px;
-    }
-
-    .content {
-        width: 548px;
+    .container {
+        max-width: 1440px;
+        padding: 110px 110px 165px 110px;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
 
         @media only screen and (max-width: 1080px) {
-            width: 400px;
-        }
-
-        @media only screen and (max-width: 768px) {
-            width: 100%;
+            padding: 110px 75px 165px 75px;
         }
 
         @media only screen and (max-width: 540px) {
-            text-align: center;
+            padding: 110px 50px 165px 50px;
+        }
+
+        .content {
+            width: 548px;
+
+            @media only screen and (max-width: 1080px) {
+                width: 400px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 540px) {
+                text-align: center;
+            }
         }
     }
 

@@ -10,18 +10,19 @@ export default class Experience extends Component {
             <>
                 <a name="experience" />
                 <section className={styles.Experience}>
-                    <div id="game"></div>
-                    <div className={styles.content}>
-                        <h2>Background</h2>
-                        <h3>Lead Land and Utility Surveyor</h3>
-                        <p>
-                            Planned and managed land, building and utility
-                            surveys across the UK to PAS-128 standards. Trained
-                            in high-risk working environments. Experience
-                            working with 3D Point Clouds, Electromagnetics, GPR
-                            and Topographical Equipment. Automated AutoCAD
-                            processes with LISP routines.
-                        </p>
+                    <div className={styles.container}>
+                        <div className={styles.content}>
+                            <h2>Background</h2>
+                            <h3>Lead Land and Utility Surveyor</h3>
+                            <p>
+                                Planned and managed land, building and utility
+                                surveys across the UK to PAS-128 standards. Trained
+                                in high-risk working environments. Experience
+                                working with 3D Point Clouds, Electromagnetics, GPR
+                                and Topographical Equipment. Automated AutoCAD
+                                processes with LISP routines.
+                            </p>
+                        </div>
                     </div>
                     <img
                         className={styles.theodolite}

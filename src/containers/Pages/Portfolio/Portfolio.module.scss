@@ -4,172 +4,177 @@
     width: 100%;
     background-image: url("../../../static/images/green2.svg");
     background-size: 100%;
-    padding: 110px;
-    display: flex;
-    justify-content: space-between;
 
-    @media only screen and (max-width: 1080px) {
-        padding: 110px 75px;
-    }
-
-    @media only screen and (max-width: 540px) {
-        padding: 150px 50px;
-    }
-
-    .list {
-        flex-basis: 47.5%;
+    .container {
+        max-width: 1440px;
+        padding: 110px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
 
         @media only screen and (max-width: 1080px) {
-            display: none;
-        }
-    }
-
-    .preview {
-        flex-basis: 47.5%;
-        position: relative;
-        margin-right: 20px;
-
-        @media only screen and (max-width: 1080px) {
-            flex-basis: 100%;
-            margin-right: 0;
+            padding: 110px 75px;
         }
 
-        .images {
-            position: relative;
+        @media only screen and (max-width: 540px) {
+            padding: 150px 50px;
+        }
 
-            > img {
-                max-width: 100%;
-                min-width: 548px;
-                box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        .list {
+            flex-basis: 47.5%;
 
-                @media only screen and (max-width: 1080px) {
-                    min-width: unset;
-                }
-
-                &.top {
-                    transform: translateY(4px);
-                    border-top-left-radius: 8px;
-                    border-top-right-radius: 8px;
-                }
-
-                &.bottom {
-                    border-bottom-left-radius: 8px;
-                    border-bottom-right-radius: 8px;
-                    transition: 0.4s ease-in-out;
-                }
-            }
-
-            .chevrons {
+            @media only screen and (max-width: 1080px) {
                 display: none;
-
-                @media only screen and (max-width: 1080px) {
-                    position: absolute;
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 0 10px;
-                    width: 100%;
-                    top: 50%;
-                }
-
-                img {
-                    cursor: pointer;
-                    width: 100px;
-
-                    @media only screen and (max-width: 768px) {
-                        width: 75px;
-                    }
-
-                    @media only screen and (max-width: 600px) {
-                        width: 50px;
-                    }
-                }
             }
         }
 
-        .box {
-            width: 100%;
-            bottom: 0px;
-            padding: 20px 0;
+        .preview {
+            flex-basis: 47.5%;
+            position: relative;
+            margin-right: 20px;
 
-            .title {
-                display: flex;
-                align-items: center;
+            @media only screen and (max-width: 1080px) {
+                flex-basis: 100%;
+                margin-right: 0;
+            }
 
-                h3 {
-                    flex-grow: 1;
-                    font-size: 40px;
-                    margin-bottom: 0;
-                    font-family: "Barlow Black";
+            .images {
+                position: relative;
+
+                > img {
+                    max-width: 100%;
+                    min-width: 548px;
+                    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+
+                    @media only screen and (max-width: 1080px) {
+                        min-width: unset;
+                    }
+
+                    &.top {
+                        transform: translateY(4px);
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                    }
+
+                    &.bottom {
+                        border-bottom-left-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        transition: 0.4s ease-in-out;
+                    }
                 }
 
-                a {
-                    margin-left: 15px;
-                }
+                .chevrons {
+                    display: none;
 
-                img {
-                    width: 30px;
+                    @media only screen and (max-width: 1080px) {
+                        position: absolute;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 10px;
+                        width: 100%;
+                        top: 50%;
+                    }
+
+                    img {
+                        cursor: pointer;
+                        width: 100px;
+
+                        @media only screen and (max-width: 768px) {
+                            width: 75px;
+                        }
+
+                        @media only screen and (max-width: 600px) {
+                            width: 50px;
+                        }
+                    }
                 }
             }
 
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                margin: 10px 0;
+            .box {
+                width: 100%;
+                bottom: 0px;
+                padding: 20px 0;
 
-                li {
-                    list-style-type: none;
-                    border-radius: 12px;
-                    margin-right: 5px;
-                    padding: 2px 12px;
-                    font-size: 14px;
+                .title {
+                    display: flex;
+                    align-items: center;
 
-                    &.HTML {
-                        background-color: tomato;
+                    h3 {
+                        flex-grow: 1;
+                        font-size: 40px;
+                        margin-bottom: 0;
+                        font-family: "Barlow Black";
                     }
 
-                    &.CSS {
-                        background-color: cornflowerblue;
+                    a {
+                        margin-left: 15px;
                     }
 
-                    &.Sass {
-                        background-color: pink;
+                    img {
+                        width: 30px;
                     }
+                }
 
-                    &.JavaScript {
-                        background-color: gold;
-                    }
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 10px 0;
 
-                    &.Firebase {
-                        background-color: orange;
-                    }
+                    li {
+                        list-style-type: none;
+                        border-radius: 12px;
+                        margin-right: 5px;
+                        padding: 2px 12px;
+                        font-size: 14px;
 
-                    &.React {
-                        background-color: skyblue;
-                    }
+                        &.HTML {
+                            background-color: tomato;
+                        }
 
-                    &.Node\.js {
-                        background-color: greenyellow;
-                    }
+                        &.CSS {
+                            background-color: cornflowerblue;
+                        }
 
-                    &.Agile {
-                        background-color: plum;
-                    }
+                        &.Sass {
+                            background-color: pink;
+                        }
 
-                    &.OOP {
-                        background-color: #aaaaaa;
-                    }
+                        &.JavaScript {
+                            background-color: gold;
+                        }
 
-                    &.APIs {
-                        background-color: turquoise;
-                    }
+                        &.Firebase {
+                            background-color: orange;
+                        }
 
-                    &.MongoDB {
-                        background-color: #68b684;
-                    }
+                        &.React {
+                            background-color: skyblue;
+                        }
 
-                    &.Testing {
-                        background-color: $secondary-color;
-                        border: 1px solid $font-color;
+                        &.Node\.js {
+                            background-color: greenyellow;
+                        }
+
+                        &.Agile {
+                            background-color: plum;
+                        }
+
+                        &.OOP {
+                            background-color: #aaaaaa;
+                        }
+
+                        &.APIs {
+                            background-color: turquoise;
+                        }
+
+                        &.MongoDB {
+                            background-color: #68b684;
+                        }
+
+                        &.Testing {
+                            background-color: $secondary-color;
+                            border: 1px solid $font-color;
+                        }
                     }
                 }
             }
